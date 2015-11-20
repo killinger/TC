@@ -105,4 +105,9 @@
     <splash src="res/screens/wp8/SplashScreenImage.jpg" width="480" height="800" />
   </platform>
   <vs:plugin name="cordova-plugin-file" version="3.0.0" />
+  <preference name="KeepRunning" value="True" />
+  <preference name="ShowTitle" value="True" />
+  <preference name="InAppBrowserStorageEnabled" value="True" />
+  <preference name="SuppressesIncrementalRendering" value="True" />
+  <vs:plugin name="cordova-plugin-globalization" version="1.0.1" />
 </widget>
