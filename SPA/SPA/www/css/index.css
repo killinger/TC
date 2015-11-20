@@ -1,0 +1,12 @@
+﻿.done {
+    color: green;
+}
+
+.locked {
+    color: red;
+    text-decoration: line-through;
+}
+
+.available {
+    color: gray;
+}
