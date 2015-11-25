@@ -1,4 +1,4 @@
-﻿app.controller('SecondController', ['$scope', function ($scope) {
+﻿app.controller('coworkerController', ['$scope', function ($scope) {
     $scope.myObj = {
         ett: { 'state': 'locked' },
         två: { 'state': 'available' },
