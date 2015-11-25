@@ -1,35 +1,5 @@
-﻿<a class="buttons" href="#/trainingCard1">Träningskort 1</a>
-<a class="buttons" href="#/trainingCard2">Träningskort 2</a>
-<a class="buttons" href="#/trainingCard3">Träningskort 3</a>
-<a class="buttons" href="#/trainingCard4">Träningskort 4</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+﻿<h1>Second</h1>
+<script src="scripts/second.js"></script>
 <!--<link href="css/index.css" rel="stylesheet" />-->
 <!--<button ng-click="test()">Läs datum fil</button>
 <button ng-click="makeFile()">skapa ny fil</button>
@@ -51,10 +21,11 @@
         Medarbetare
     </div>
     <div id="centerContentTrainingcard">
-        <a class="buttons" href="trainingCard1.html" ng-class="{testest: test==true}">Träningskort 1</a>
-        <a class="buttons" href="trainingCard2.html">Träningskort 2</a>
-        <a class="buttons" href="trainingCard3.html">Träningskort 3</a>
-        <a class="buttons" href="trainingCard4.html">Träningskort 4</a>
+        <a class="buttons" href="#/trainingCard1">Träningskort 1</a>
+        <a class="buttons" href="#/trainingCard2" ng-class="{ready: cardsDone > 0, done: cardsDone > 1}">Träningskort 2</a>
+        <a class="buttons" href="#/trainingCard3" ng-class="{ready: cardsDone > 1, done: cardsDone > 2}">Träningskort 3</a>
+        <a class="buttons" href="#/trainingCard4" ng-class="{ready: cardsDone > 2, done: cardsDone > 3}">Träningskort 4</a>
+        <button ng-click="checkDate()">safhi</button>
     </div>
 </body>
 </html>
