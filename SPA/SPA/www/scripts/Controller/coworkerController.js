@@ -2,7 +2,7 @@
     $scope.cardsDone = 2;
 
     var dateFromFile = new Date("12/31/2015");
-    var currentDate = new Date("1/8/2016");
+    var currentDate = new Date("1/1/2016");
 
     $scope.checkDate = function(){
         console.log(dateFromFile);
