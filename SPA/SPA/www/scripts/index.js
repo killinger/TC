@@ -139,6 +139,6 @@ function checkEarlierCards() {
 function goBack() {
     window.history.back();
 }
-function knas() {
-    alert("hejsan");
+function trainingCardDone(i) {
+    alert(i);
 }
