@@ -20,9 +20,3 @@ app.controller('MainController', ['$scope', function ($scope) {
 
 }]);
 
-app.controller('SecondController', ['$scope', function ($scope) {
-    $scope.myObj = {
-        ett: { 'state': 'done' },
-        tre: { 'state': 'locked' }
-    };
-}]);
