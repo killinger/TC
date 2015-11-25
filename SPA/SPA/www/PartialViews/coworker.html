@@ -1,16 +1,4 @@
-﻿<h1>Second</h1>
-<script src="scripts/second.js"></script>
-<!--<link href="css/index.css" rel="stylesheet" />-->
-<!--<button ng-click="test()">Läs datum fil</button>
-<button ng-click="makeFile()">skapa ny fil</button>
-<button ng-click="readFiles()">läs ny fil</button>
-<div ng-class=
-     "{locked: myObj.ett.state === 'locked', 
-     done: myObj.ett.state === 'done', 
-     available: myObj.ett.state === 'available'}">Stuff Goes Here</div>
-<div ng-class="{locked: myObj.tre.state === 'locked', done: myObj.tre.state === 'done', available: myObj.tre.state === 'available'}">Stuff Goes Here</div>
-<a href="#/">main</a>-->
-
+﻿
 <!DOCTYPE html>
 <html>
 <body>
@@ -21,11 +9,10 @@
         Medarbetare
     </div>
     <div id="centerContentTrainingcard">
-        <a class="buttons" href="#/trainingCard1">Träningskort 1</a>
-        <a class="buttons" href="#/trainingCard2" ng-class="{ready: cardsDone > 0, done: cardsDone > 1}">Träningskort 2</a>
-        <a class="buttons" href="#/trainingCard3" ng-class="{ready: cardsDone > 1, done: cardsDone > 2}">Träningskort 3</a>
-        <a class="buttons" href="#/trainingCard4" ng-class="{ready: cardsDone > 2, done: cardsDone > 3}">Träningskort 4</a>
-        <button ng-click="checkDate()">safhi</button>
+        <a href="#/trainingCard1"><button class="buttons" ng-class="{done: cardsDone > 0}">Träningskort 1</button></a>
+        <a href="#/trainingCard2"><button class="buttons" ng-class="{ready: cardsDone > 0, done: cardsDone > 1}" ng-disabled="checkDate() < 7">Träningskort 2</button></a>
+        <a href="#/trainingCard3"><button class="buttons" ng-class="{ready: cardsDone > 1, done: cardsDone > 2}" ng-disabled="checkDate() < 14">Träningskort 3</button></a>
+        <a href="#/trainingCard4"><button class="buttons" ng-class="{ready: cardsDone > 2, done: cardsDone > 3}" ng-disabled="checkDate() < 21">Träningskort 4</button></a>
     </div>
 </body>
 </html>

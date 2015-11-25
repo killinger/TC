@@ -18,6 +18,7 @@
         return diffDays;
     };
 
+
     $scope.readFiles = function(){
         readFileDate2();
     }
