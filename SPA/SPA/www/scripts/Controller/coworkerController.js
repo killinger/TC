@@ -1,10 +1,4 @@
 ﻿app.controller('coworkerController', ['$scope', function ($scope) {
-    $scope.myObj = {
-        ett: { 'state': 'locked' },
-        två: { 'state': 'available' },
-        tre: { 'state': 'locked' }
-    };
-
     $scope.cardsDone = 2;
 
     var dateFromFile = new Date("12/31/2015");
@@ -17,7 +11,6 @@
         var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
         return diffDays;
     };
-
 
     $scope.readFiles = function(){
         readFileDate2();
