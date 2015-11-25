@@ -55,6 +55,10 @@ margin-bottom: 3%;
  background-image: linear-gradient(to bottom, #E40A0A, #9F0202);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#E40A0A, endColorstr=#9F0202);
 }
 
+.testest {
+    color:brown;
+}
+
 #centerContent{
     margin-top:5%;
     text-align:center;

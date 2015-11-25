@@ -4,10 +4,15 @@
         två: { 'state': 'available' },
         tre: { 'state': 'locked' }
     };
-    $scope.test = function () {
-        //alert("twat");
-        readFileDate1();
-    }
+
+    $scope.test = true;
+
+    $scope.dateFromFile = new Date();
+
+    $scope.checkDate = function(){
+
+    };
+
     $scope.readFiles = function(){
         readFileDate2();
     }
